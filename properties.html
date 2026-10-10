@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Properties | Swaralaya Estates</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+	<a href="index.html" class="logo">♪ Swaralaya Estates</a>
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="properties.html">Properties</a>
+		<a href="buy.html">Buy</a>
+		<a href="rent.html">Rent</a>
+		<a href="sell.html">Sell Property</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+</header>
+
+<main class="properties-page">
+	<section class="properties-heading">
+		<p class="eyebrow">FIND YOUR PERFECT PLACE</p>
+		<h1>Spaces that feel like <span>home.</span></h1>
+		<p>Explore thoughtfully selected homes for every lifestyle and budget.</p>
+	</section>
+
+	<section class="property-filters">
+		<input type="search" id="property-search"
+			   placeholder="Search by property or location">
+
+		<select id="type-filter">
+			<option value="all">All property types</option>
+			<option value="villa">Villas</option>
+			<option value="apartment">Apartments</option>
+			<option value="house">Independent houses</option>
+		</select>
+
+		<select id="purpose-filter">
+			<option value="all">Buy and rent</option>
+			<option value="buy">For sale</option>
+			<option value="rent">For rent</option>
+		</select>
+
+		<button type="button" id="reset-filters">Reset filters</button>
+	</section>
+
+	<p id="results-count" aria-live="polite"></p>
+
+	<section class="property-grid" id="property-grid">
+
+		<article class="property-card"
+				 data-type="villa" data-purpose="buy"
+				 data-search="serenity villa bengaluru">
+			<img src="images/serenity-villa.jpg"
+				 alt="Contemporary Serenity Villa" loading="lazy">
+			<div class="property-info">
+				<span class="property-tag">FOR SALE · VILLA</span>
+				<h2>Serenity Villa</h2>
+				<p>Bengaluru, Karnataka</p>
+				<div class="property-details">4 Beds · 3 Baths · Garden</div>
+				<div class="property-bottom">
+					<strong>₹1.85 Cr</strong>
+					<button type="button" class="favorite-btn"
+							aria-pressed="false">♡ Save</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="property-card"
+				 data-type="apartment" data-purpose="rent"
+				 data-search="aurelia residence apartment bengaluru">
+			<img src="images/aurelia-residence.jpg"
+				 alt="Aurelia modern residence" loading="lazy">
+			<div class="property-info">
+				<span class="property-tag">FOR RENT · APARTMENT</span>
+				<h2>Aurelia Residence</h2>
+				<p>Whitefield, Bengaluru</p>
+				<div class="property-details">3 Beds · 2 Baths · Balcony</div>
+				<div class="property-bottom">
+					<strong>₹35,000/mo</strong>
+					<button type="button" class="favorite-btn"
+							aria-pressed="false">♡ Save</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="property-card"
+				 data-type="house" data-purpose="buy"
+				 data-search="willow house mysuru">
+			<img src="images/willow-house.jpg"
+				 alt="Willow House with a garden" loading="lazy">
+			<div class="property-info">
+				<span class="property-tag">FOR SALE · HOUSE</span>
+				<h2>Willow House</h2>
+				<p>Mysuru, Karnataka</p>
+				<div class="property-details">3 Beds · 2 Baths · Garden</div>
+				<div class="property-bottom">
+					<strong>₹92 Lakh</strong>
+					<button type="button" class="favorite-btn"
+							aria-pressed="false">♡ Save</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="property-card"
+				 data-type="villa" data-purpose="rent"
+				 data-search="hero villa luxury home bengaluru">
+			<img src="images/hero-villa.jpg"
+				 alt="Luxury contemporary villa" loading="lazy">
+			<div class="property-info">
+				<span class="property-tag">FOR RENT · VILLA</span>
+				<h2>Willow Creek Villa</h2>
+				<p>North Bengaluru</p>
+				<div class="property-details">4 Beds · 4 Baths · Pool</div>
+				<div class="property-bottom">
+					<strong>₹85,000/mo</strong>
+					<button type="button" class="favorite-btn"
+							aria-pressed="false">♡ Save</button>
+				</div>
+			</div>
+		</article>
+
+	</section>
+
+	<p id="no-results" hidden>No matching properties found. Try different filters.</p>
+</main>
+
+<footer class="site-footer">
+	<p>© 2026 Swaralaya Estates · Find a place that feels like home.</p>
+</footer>
+
+</body>
+</html>

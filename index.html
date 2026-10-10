@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Swaralaya Estates | Find Your Harmony</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="#" class="brand">
+            <span class="brand-icon">S</span>
+
+            <span class="brand-name">
+                SWARALAYA
+                <small>ESTATES</small>
+            </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#properties">Buy</a>
+            <a href="#properties">Rent</a>
+            <a href="#contact">Sell Property</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#contact" class="nav-button">Get Started ↗</a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation">☰</button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    ✦ A NEW STANDARD OF LIVING
+                </span>
+
+                <h1>
+                    Find a home<br>
+                    that feels like<br>
+                    <span>harmony.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover exceptional homes, beautiful spaces,
+                    and places where your next chapter begins.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#properties" class="primary-button">
+                        Explore Properties <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        List Your Property
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="gold-line"></span>
+                    YOUR SPACE. YOUR STORY. YOUR HARMONY.
+                </div>
+
+            </div>
+
+
+            <!-- Property Search -->
+            <div class="search-card">
+
+                <div class="search-heading">
+                    <div>
+                        <span class="search-kicker">LET'S FIND YOUR PLACE</span>
+                        <h2>Find your perfect property</h2>
+                    </div>
+
+                    <span class="search-symbol">⌕</span>
+                </div>
+
+                <form id="propertySearch">
+
+                    <div class="search-fields">
+
+                        <label>
+                            <span>Location</span>
+
+                            <input
+                                type="text"
+                                id="location"
+                                placeholder="e.g. Bengaluru">
+                        </label>
+
+                        <label>
+                            <span>Property Type</span>
+
+                            <select id="propertyType">
+                                <option value="all">Any type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="house">Independent house</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>Budget</span>
+
+                            <select id="budget">
+                                <option value="all">Any budget</option>
+                                <option value="5000000">Under ₹50 lakh</option>
+                                <option value="10000000">Under ₹1 crore</option>
+                                <option value="20000000">Under ₹2 crore</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>Looking to</span>
+
+                            <select id="listingType">
+                                <option value="all">Buy or rent</option>
+                                <option value="buy">Buy</option>
+                                <option value="rent">Rent</option>
+                            </select>
+                        </label>
+
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        Search Properties <span>→</span>
+                    </button>
+
+                </form>
+
+                <p class="search-message" id="searchMessage"
+                   aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Properties Section -->
+        <section class="properties-section" id="properties">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">A PLACE TO BELONG</span>
+
+                    <h2>Spaces worth <span>coming home to.</span></h2>
+
+                    <p>
+                        Explore handpicked properties designed around
+                        the way you want to live.
+                    </p>
+                </div>
+
+                <a href="#properties" class="view-all">
+                    Discover all properties ↗
+                </a>
+
+            </div>
+
+
+            <div class="property-grid">
+
+                <article class="property-card"
+                         data-location="bengaluru"
+                         data-type="villa"
+                         data-price="18000000"
+                         data-listing="buy">
+
+                    <div class="property-image image-one">
+
+                        <span class="property-tag">FEATURED</span>
+
+                        <button class="favorite-button"
+                                aria-label="Add Oceanview Villa to favorites">
+                            ♡
+                        </button>
+
+                        <span class="image-label">01 / SIGNATURE HOME</span>
+
+                    </div>
+
+                    <div class="property-info">
+
+                        <div class="property-location">
+                            BENGALURU, KARNATAKA
+                        </div>
+
+                        <h3>Serenity Villa</h3>
+
+                        <p class="property-address">
+                            A beautiful home for a life well lived.
+                        </p>
+
+                        <div class="property-features">
+                            <span>🛏 4 Beds</span>
+                            <span>▱ 3 Baths</span>
+                            <span>⌂ 2 Parking</span>
+                        </div>
+
+                        <div class="property-bottom">
+                            <div>
+                                <small>Starting from</small>
+                                <strong>₹1.8 Cr</strong>
+                            </div>
+
+                            <button class="details-button"
+                                    data-property="Serenity Villa">
+                                ↗
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="property-card"
+                         data-location="mysuru"
+                         data-type="apartment"
+                         data-price="8500000"
+                         data-listing="buy">
+
+                    <div class="property-image image-two">
+
+                        <span class="property-tag">NEW ARRIVAL</span>
+
+                        <button class="favorite-button"
+                                aria-label="Add The Aurelia Residence to favorites">
+                            ♡
+                        </button>
+
+                        <span class="image-label">02 / CITY LIVING</span>
+
+                    </div>
+<div class="property-photo">
+  <img src="images/serenity-villa.jpg" alt="Serenity Villa">
+</div>
+                    <div class="property-info">
+
+                        <div class="property-location">
+                            MYSURU, KARNATAKA
+                        </div>
+
+                        <h3>The Aurelia Residence</h3>
+
+                        <p class="property-address">
+                            Contemporary living with room to grow.
+                        </p>
+
+                        <div class="property-features">
+                            <span>🛏 3 Beds</span>
+                            <span>▱ 2 Baths</span>
+                            <span>⌂ 1 Parking</span>
+                        </div>
+
+                        <div class="property-bottom">
+                            <div>
+                                <small>Starting from</small>
+                                <strong>₹85 Lakh</strong>
+                            </div>
+
+                            <button class="details-button"
+                                    data-property="The Aurelia Residence">
+                                ↗
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="property-card"
+                         data-location="bengaluru"
+                         data-type="house"
+                         data-price="35000"
+                         data-listing="rent">
+
+                    <div class="property-image image-three">
+
+                        <span class="property-tag">FOR RENT</span>
+
+                        <button class="favorite-button"
+                                aria-label="Add Willow House to favorites">
+                            ♡
+                        </button>
+
+                        <span class="image-label">03 / QUIET LUXURY</span>
+
+                    </div>
+
+                    <div class="property-info">
+
+                        <div class="property-location">
+                            BENGALURU, KARNATAKA
+                        </div>
+
+                        <h3>Willow House</h3>
+
+                        <p class="property-address">
+                            A peaceful retreat in the heart of the city.
+                        </p>
+
+                        <div class="property-features">
+                            <span>🛏 3 Beds</span>
+                            <span>▱ 2 Baths</span>
+                            <span>⌂ 1 Parking</span>
+                        </div>
+
+                        <div class="property-bottom">
+                            <div>
+                                <small>Monthly rent</small>
+                                <strong>₹35,000</strong>
+                            </div>
+
+                            <button class="details-button"
+                                    data-property="Willow House">
+                                ↗
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="results-message" id="resultsMessage"
+               aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="about-mark">S</div>
+
+            <div class="about-content">
+
+                <span class="section-kicker">THE SWARALAYA PHILOSOPHY</span>
+
+                <h2>
+                    Every family has a rhythm.<br>
+                    <span>Every home has a story.</span>
+                </h2>
+
+                <p>
+                    We believe a home is more than walls and windows.
+                    It is where memories take shape, dreams grow,
+                    and life's most meaningful moments unfold.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+
+            <div>
+                <span class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</span>
+
+                <h2>Let's find your place in the world.</h2>
+            </div>
+
+            <a href="mailto:hello@swaralayaestates.com"
+               class="contact-button">
+                Get in Touch ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#home" class="footer-brand">
+            SWARALAYA <span>ESTATES</span> ♪
+        </a>
+
+        <p>Where Every Home Finds Its Harmony.</p>
+
+        <span>© 2026 Swaralaya Estates. All rights reserved.</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```html
+<!-- Property Categories -->
+<section class="categories-section" id="categories">
+    <div class="section-heading">
+        <div>
+            <span class="section-kicker">EXPLORE YOUR OPTIONS</span>
+            <h2>Find a home for <span>every chapter.</span></h2>
+            <p>From your first apartment to your forever home.</p>
+        </div>
+    </div>
+
+    <div class="category-grid">
+        <a href="#properties" class="category-card">
+            <span class="category-icon">⌂</span>
+            <h3>Luxury Villas</h3>
+            <p>Space, privacy, and exceptional living.</p>
+            <span class="category-link">Explore villas ↗</span>
+        </a>
+
+        <a href="#properties" class="category-card">
+            <span class="category-icon">▦</span>
+            <h3>Modern Apartments</h3>
+            <p>Contemporary homes in connected locations.</p>
+            <span class="category-link">Explore apartments ↗</span>
+        </a>
+
+        <a href="#properties" class="category-card">
+            <span class="category-icon">⌂</span>
+            <h3>Independent Houses</h3>
+            <p>A place to create memories of your own.</p>
+            <span class="category-link">Explore houses ↗</span>
+        </a>
+
+        <a href="#properties" class="category-card">
+            <span class="category-icon">♡</span>
+            <h3>Rental Homes</h3>
+            <p>Flexible spaces for your next adventure.</p>
+            <span class="category-link">Explore rentals ↗</span>
+        </a>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="benefits-section">
+    <div class="benefits-heading">
+        <span class="section-kicker">THE SWARALAYA DIFFERENCE</span>
+        <h2>The art of <span>better living.</span></h2>
+        <p>A thoughtful approach to finding the place you'll call home.</p>
+    </div>
+
+    <div class="benefits-grid">
+        <article>
+            <span>01</span>
+            <h3>Curated Properties</h3>
+            <p>Explore a considered selection of homes for different lifestyles.</p>
+        </article>
+
+        <article>
+            <span>02</span>
+            <h3>A Simpler Search</h3>
+            <p>Use convenient property filters to narrow down your choices.</p>
+        </article>
+
+        <article>
+            <span>03</span>
+            <h3>Personal Guidance</h3>
+            <p>Make your property journey clearer with helpful enquiry options.</p>
+        </article>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+    <span class="section-kicker">WORDS THAT MATTER</span>
+    <h2>Every home has a <span>story.</span></h2>
+    <p class="testimonial-note">
+        Your future home story starts here. Add verified customer
+        testimonials when they become available.
+    </p>
+</section>
+```
